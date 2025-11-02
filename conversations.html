@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversations</title>
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Our Own Framework -->
+        <link rel="stylesheet" href="css/framework.css">
+        <!-- Our Css File -->
+        <link rel="stylesheet" href="css/orders.css">
+    </head>
+
+    <body>
+        <!-- Start Page -->
+        <div class="page d-flex">
+            <!-- Start SideBar  -->
+            <div class="sidebar p-relative p-20">
+                <div class="intro d-flex">
+                    <i class="fa-brands fa-codiepie"></i>
+                    <h1 class="m-0 fs-20">Matrix</h1>
+                </div>
+
+                <!-- Start Ul Links -->
+                <div class="ul-links">
+                    <ul class="m-0 mt-15 pl-20 flex-1">
+                    <!-- First Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="index.html">
+                            <i class="fa-solid fa-list"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <!-- Second Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="orders.html">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>Orders</span>
+                        </a>
+                    </li>
+
+                    <!-- Third Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="customers.html">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span>Customers</span>
+                        </a>
+                    </li>
+
+                    <!-- Fourth Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="inventory.html">
+                            <i class="fa-solid fa-folder-open"></i>
+                            <span>Inventory</span>
+                        </a>
+                    </li>
+
+                    <!-- Fifth Ii -->
+                    <li class="active mb-15 trans-3s">
+                        <a href="conversations.html">
+                            <i class="fa-solid fa-comment-dots"></i>
+                            <span>Conversations</span>
+                        </a>
+                    </li>
+
+                    <!-- Sixth Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="settings.html">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    </ul>
+                    <!-- End Ul Links -->
+
+                    <!-- Start Another Ul Links -->
+                
+                    <ul class="m-0 pl-20">
+                    <li class="mb-15 trans-3s">
+                        <a href="#">
+                            <i class="fa-solid fa-headphones c-black"></i>
+                            <span>Contact Support</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-15 trans-3s">
+                        <a href="#">
+                            <i class="fa-solid fa-gift c-black"></i>
+                            <span>Free Gift Awaits You!</span>
+                            <br>
+                            <span>Upgrade your account </span>
+                            <i class="fa-solid fa-arrow-right c-black" style="font-size: 11px;"></i>
+                        </a>
+                    </li>
+
+                    <li class="trans-3s">
+                        <a href="#">
+                            <i class="fa-solid fa-right-from-bracket c-red"></i>
+                            <span class="c-red fs-14">LogOut</span>
+                        </a>
+                    </li>
+                    </ul>
+                <!-- End Another Ul Links -->
+                </div>
+            </div>
+            <!-- End SideBar -->
+
+            <!-- Start Content -->
+            <div class="content w-full">
+                <div class="head bg-white">
+                    <div class="user-title d-flex p-10 pl-15 space-between">
+                        <div class="title">
+                            <h2 class="m-0 fs-20">Conversations</h2>
+                        </div>
+
+                        <div class="user-shop d-flex">
+                            <h3 class="m-0 p-relative trans-3s fs-14 m-auto mr-15 rad-15">
+                                Ayoub's Shop
+                                <i class="fa-solid fa-chevron-down fs-12 pl-8"></i>
+                            </h3>
+                            <i class="fa-solid fa-bell m-auto mr-15"></i>
+                            <img class="rad-6 m-auto" src="images/user-profile.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="order-info w-full c-blue">
+                        <i class="fa-solid fa-house w-fit"></i>
+                        <span class="fs-14 ml-30 p-relative">Conversations</span>
+                    </div>
+                </div>
+
+                <div class="header d-flex p-relative">
+                    <h1 class="m-0 flex-1 fs-20 m-20">Conversations With Customers</h1>
+                    <div class="new-order mt-20">
+                        <span href="" class="bottom-click trans-3s rad-10 m-auto mr-20 c-white pr-20">
+                            <i class="fa-solid fa-plus"></i>
+                            New Message
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Start Conversations Page -->
+                <div class="conversation-content d-flex gap-20">
+                    <div class="contacts-table p-20 ml-20 w-fit rad-6 bg-white">
+                        <div class="top d-flex align-center space-between mb-15">
+                            <h4 class="m-0 fs-16">Contacts</h4>
+                            <span class="fs-14">20</span>
+                        </div>
+                        <form>
+                            <input class="p-10 rad-6 w-full fs-13" type="search" name="Search-contact" placeholder="Search">
+                        </form>
+
+                        <div class="contact-cards p-relative d-flex gap-15">
+                            <!-- First Card -->
+                            <div class="card active d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative active">
+                                        <img src="images/customer-1.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Jane Doe</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="notifaction rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span>12:55am</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Second Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative active">
+                                        <img src="images/customer-2.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Janet Adebaeo</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span>5:50am</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Third Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative un-active">
+                                        <img src="images/customer-3.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Mouhamed Anour</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="notifaction rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span>8:20pm</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Fourth Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative active">
+                                        <img src="images/customer-2.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Abdarahman Salah</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="odd rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span class="mt-auto">6:00am</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Fifth Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative un-active">
+                                        <img src="images/customer-1.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Jane Doe</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span>12:55am</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Sixth Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative active">
+                                        <img src="images/customer-3.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Farouk</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="notifaction rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span>12:55am</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Seveneth Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative active">
+                                        <img src="images/customer-2.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Anis</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="odd rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span class="mt-auto">12:55am</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Eighth Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative un-active">
+                                        <img src="images/customer-1.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Jane Doe</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="notifaction rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span>12:55am</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Nineth Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative un-active">
+                                        <img src="images/customer-3.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Haithem</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="notifaction rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span>12:55am</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Tenth Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative active">
+                                        <img src="images/customer-2.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Anis</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="odd rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span class="mt-auto">12:55am</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Eleven Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative active">
+                                        <img src="images/customer-1.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Jane Doe</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="notifaction rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span>12:55am</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Tweleve Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative active">
+                                        <img src="images/customer-2.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Janet Adebaeo</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span>5:50am</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Thirteen Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative active">
+                                        <img src="images/customer-3.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Mouhamed Anour</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="notifaction rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span>8:20pm</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Fourteen Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative un-active">
+                                        <img src="images/customer-2.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Abdarahman Salah</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="odd rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span class="mt-auto">6:00am</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Fifteen Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative un-active">
+                                        <img src="images/customer-1.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Jane Doe</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span>12:55am</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Sixteen Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative un-active">
+                                        <img src="images/customer-3.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Farouk</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="notifaction rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span>12:55am</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Seveneteen Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative active">
+                                        <img src="images/customer-2.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Anis</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="odd rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span class="mt-auto">12:55am</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Eighteen Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative active">
+                                        <img src="images/customer-1.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Jane Doe</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="notifaction rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span>12:55am</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Nineteen Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative active">
+                                        <img src="images/customer-3.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Haithem</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="notifaction rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span>12:55am</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Twenty Card -->
+                            <div class="card d-flex gap-15 p-relative trans-3s">
+                                    <div class="user-img p-relative un-active">
+                                        <img src="images/customer-2.svg" alt="customer-img ">
+                                    </div>
+                                    <div class="content-profile d-flex">
+                                        <div class="left d-flex">
+                                            <h3 class="m-0 fs-14 mb-10">Anis</h3>
+                                            <h3 class="m-0 fs-14">Hi, i want make enquiries about yo...</h3>                                        
+                                        </div>
+                                        <div class="right fs-12 d-flex ml-10">
+                                            <span class="odd rad-6 w-fit trans-3s p-relative">New</span>
+                                            <span class="mt-auto">12:55am</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conversation-table mr-20 bg-white flex-1 p-20 rad-6">
+                        <div class="top d-flex p-relative">
+                            <div class="left d-flex flex-1">
+                                <div class="user-img">
+                                    <img src="images/customer-1.svg" alt="">
+                                </div>
+                                <div class="user-info d-flex ml-15 p-relative">
+                                    <div class="name">
+                                        <h3 class="m-0 fs-14">Jane Doe</h3>
+                                    </div>
+                                    <div class="active fs-12 ml-15 p-relative">
+                                        <span>Online</span>
+                                        <span class="time">12:55am</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right d-flex">
+                                <div class="top">
+                                    <span class="btn-shape fs-12">New Customer</span>
+                                    <a class="fs-14 ml-8 trans-3s" href="#">View Profile</a>
+                                </div>
+                                <div class="bottom">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                    <span class="fs-14">0 Orders</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="middle mt-30">
+                            <h3 class="m-0 w-fit rad-6 fs-14">25 October 2025</h3>
+                            <div class="messages d-flex gap-20 mt-20">
+                                <div class="left">
+                                    <div class="product d-flex rad-6 p-8">
+                                        <div class="product-img">
+                                            <img src="images/product-1.svg" width="55px" alt="">
+                                        </div>
+                                        <div class="flex-1">
+                                            <span class="fs-14">Iphone 13</span>
+                                            <h4 class="m-0 fs-14">₦730,000.00</h4>
+                                        </div>
+                                        <div>
+                                            <span class="fs-12"><b class="c-blue">12</b> in Stock</span>
+                                        </div>
+                                    </div>
+                                    <h2 class="m-0 fs-14 mt-20">Hello, I want to make enquiries about your product</h2>
+                                    <span class="time fs-12">12:55 am</span>
+                                </div>
+
+                                <div class="right">
+                                    <h2 class="m-0 fs-14">Hello Janet, Thank You for reaching Out</h2>
+                                    <span class="time fs-12">12:57 am</span>
+                                    <h2 class="m-0 fs-14 mt-20">What Do you Want To Know?</h2>
+                                    <span class="time fs-12">12:57 am</span>
+                                </div>
+                            </div>
+
+                            <h3 class="m-0 w-fit rad-6 fs-14">Today</h3>
+                            <h2 class="m-0 fs-14 w-fit mt-20">I want to know if the price is negotiable, i need about 2 Units</h2>
+                            <span class="time fs-12">11:25 am</span>
+                        </div>
+
+                        <div class="bottom">
+                            <div class="search p-relative">
+                                <input class="p-15 rad-6 w-full fs-14" type="text" name="Message" placeholder="Your message">
+                                <span class="send trans-3s p-relative">send</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Conversations Page -->
+            </div>
+        </div>
+        <!-- End Page -->
+    </body>
+</html>

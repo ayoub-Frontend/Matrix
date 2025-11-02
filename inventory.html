@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inventory</title>
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Our Own Framework -->
+        <link rel="stylesheet" href="css/framework.css">
+        <!-- Our Css File -->
+        <link rel="stylesheet" href="css/orders.css">
+    </head>
+
+    <body>
+        <!-- Start Page -->
+        <div class="page d-flex">
+            <!-- Start SideBar  -->
+            <div class="sidebar p-relative p-20">
+                <div class="intro d-flex">
+                    <i class="fa-brands fa-codiepie"></i>
+                    <h2 class="m-0 fs-20">Matrix</h2>
+                </div>
+
+                <!-- Start Ul Links -->
+                <div class="ul-links">
+                    <ul class="m-0 mt-15 pl-20 flex-1">
+                    <!-- First Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="index.html">
+                            <i class="fa-solid fa-list"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <!-- Second Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="orders.html">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>Orders</span>
+                        </a>
+                    </li>
+
+                    <!-- Third Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="customers.html">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span>Customers</span>
+                        </a>
+                    </li>
+
+                    <!-- Fourth Ii -->
+                    <li class="active mb-15 trans-3s">
+                        <a href="inventory.html">
+                            <i class="fa-solid fa-folder-open"></i>
+                            <span>Inventory</span>
+                        </a>
+                    </li>
+
+                    <!-- Fifth Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="conversations.html">
+                            <i class="fa-solid fa-comment-dots"></i>
+                            <span>Conversations</span>
+                        </a>
+                    </li>
+
+                    <!-- Sixth Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="settings.html">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    </ul>
+                    <!-- End Ul Links -->
+
+                    <!-- Start Another Ul Links -->
+                
+                    <ul class="m-0 pl-20">
+                    <li class="mb-15 trans-3s">
+                        <a href="#">
+                            <i class="fa-solid fa-headphones c-black"></i>
+                            <span>Contact Support</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-15 trans-3s">
+                        <a href="#">
+                            <i class="fa-solid fa-gift c-black"></i>
+                            <span>Free Gift Awaits You!</span>
+                            <br>
+                            <span>Upgrade your account </span>
+                            <i class="fa-solid fa-arrow-right c-black" style="font-size: 11px;"></i>
+                        </a>
+                    </li>
+
+                    <li class="trans-3s">
+                        <a href="#">
+                            <i class="fa-solid fa-right-from-bracket c-red"></i>
+                            <span class="c-red fs-14">LogOut</span>
+                        </a>
+                    </li>
+                    </ul>
+                <!-- End Another Ul Links -->
+                </div>
+            </div>
+            <!-- End SideBar -->
+
+            <!-- Start Content -->
+            <div class="content w-full">
+                <div class="head bg-white">
+                    <div class="user-title d-flex p-10 pl-15 space-between">
+                        <div class="title">
+                            <h2 class="m-0 fs-20">Inventory</h2>
+                        </div>
+
+                        <div class="user-shop d-flex">
+                            <h3 class="m-0 p-relative trans-3s fs-14 m-auto mr-15 rad-15">
+                                Ayoub's Shop
+                                <i class="fa-solid fa-chevron-down fs-12 pl-8"></i>
+                            </h3>
+                            <i class="fa-solid fa-bell m-auto mr-15"></i>
+                            <img class="rad-6 m-auto" src="images/user-profile.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="order-info w-full c-blue">
+                        <i class="fa-solid fa-house w-fit"></i>
+                        <span class="fs-14 ml-30 p-relative">Inventory</span>
+                    </div>
+                </div>
+
+                <div class="header d-flex p-relative">
+                    <h1 class="m-0 flex-1 fs-20 m-20">Inventory Summary</h1>
+                    <div class="new-order mt-20">
+                        <span href="" class="bottom-click trans-3s rad-10 m-auto mr-20 c-white pr-20">
+                            <i class="fa-solid fa-plus"></i>
+                            Add a New Product
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Start Cards -->
+                <div class="cards-info d-grid gap-20 ml-20 mr-20">
+                    <!-- First Card -->
+                    <div class="card rad-6 p-15 bg-blue">
+                        <div class="top d-flex space-between">
+                            <div class="icon trans-3s rad-6 p-10">
+                                <i class="fa-solid fa-folder-open"></i>
+                            </div>
+                            <div class="week">
+                                <span class="trans-3s" style="color: white;">
+                                    This week
+                                    <i class="fa-solid fa-chevron-down ml-8"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="info d-flex mt-20 gap-100 p-relative">
+                            <div class="orders">
+                                <span class="fs-14 c-white">All Products</span>
+                                <h3 class="m-0 c-white">
+                                    350
+                                </h3>
+                            </div>
+
+                            <div class="pending">
+                                <span class="c-white">Actvie</span>
+                                <h3 class="m-0 c-white">
+                                    316
+                                    <span class="c-white fs-12">86%</span>
+                                </h3>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <!-- Second Card -->
+                    <div class="card form rad-6 p-15 bg-white">
+                        <div class="top d-flex space-between">
+                            <div class="icon trans-3s rad-6 p-10">
+                                <i class="fa-solid fa-user-group"></i>
+                            </div>
+                            <div class="week">
+                                <span class="trans-3s">
+                                    This week
+                                    <i class="fa-solid fa-chevron-down ml-8"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="info d-flex mt-20 gap-100 p-relative">
+                            <div class="orders">
+                                <span class="fs-14 c-red">Low Stock Alret</span>
+                                <h3 class="m-0">23</h3> 
+                            </div>
+
+                            <div class="pending">
+                                <span class="fs-14" style="color: var(--text-color);">Expired</span>
+                                <h3 class="m-0">3</h3>
+                            </div>
+
+                            <div class="completed">
+                                <span class="fs-14" style="color: var(--text-color);">1 Start Raiting</span>
+                                <h3 class="m-0">
+                                    2
+                                </h3>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <!-- End Cards -->
+
+                <!-- Start Table -->
+                <div class="table p-20 rad-6 bg-white m-20">
+                    <div class="header d-flex">
+                        <h3 class="m-0 flex-1 fs-18">Inventory Items</h3>
+                        <div class="options d-flex gap-20 align-center">
+                            <div class="search-bar p-relative" style="text-align: left;">
+                                <form>
+                                    <input class="trans-3s rad-6 fs-12" type="search" placeholder="Search" name="Search">
+                                </form>
+                            </div>
+
+                            <div class="bottom hover-option rad-6 p-relative trans-3s fs-14">
+                                <span>Filter</span>
+                                <div class="option trans-3s">
+                                    <h3 class="m-0 fs-16 mb-10" style="color: black;">Filter</h3>
+                                    <div class="order-type mb-25">
+                                        <span>Action Type</span>
+                                        <form class="mt-10">
+                                            <input type="checkbox" name="Checkbox" id="check-1">
+                                            <label class="p-relative" for="check-1">Publish</label>
+
+                                            <input type="checkbox" name="Checkbox" id="check-2">
+                                            <label class="p-relative" for="check-2">Un-Publish</label>
+                                        </form>
+                                    </div>
+
+                                    <div class="status-type mb-10 p-relative">
+                                        <span>Status</span>
+                                        <form class="mt-10 p-relative w-fit">
+                                            <select class="rad-6" name="status" id="status">
+                                                <option value="all">All</option>
+                                                <option value="status-2">Published</option>
+                                                <option value="status-3">Un-Published</option>
+                                            </select>
+                                        </form>
+                                    </div>
+
+                                    <div class="customer-type p-relative">
+                                        <span>Product</span>
+                                        <form class="mt-10 w-fit p-relative">
+                                            <select class="rad-6" name="customer" id="customer">
+                                                <option value="all">All</option>
+                                                <option value="customer-1">Iphone 13</option>
+                                                <option value="customer-2">Iphone 12</option>
+                                                <option value="customer-3">Lopo T-Shirt</option>
+                                            </select>
+                                        </form>
+                                    </div>
+
+                                    <div class="amount-type p-relative mt-10 mb-15">
+                                        <span>Amount</span>
+                                        <br>
+                                        <span>From</span>
+                                        <div class="price mt-10">
+                                            <form>
+                                                <input type="number" value="0.00" name="Price">
+                                            </form>
+
+                                            <span class="p-absolute">To</span>
+                                            <br>
+                                            <form>
+                                                <input type="number" name="Price" value="0.00">
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="submit-type">
+                                        <input class="trans-3s" type="submit" name="Filter" value="Fleter">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bottom hover-option rad-6 p-relative trans-3s fs-14">
+                                <span>Date</span>
+                                <div class="option trans-3s">
+                                    <h3 class="m-0 fs-16 mb-10" style="color: black;">By Date</h3>
+                                    <div class="order-type mt-15">
+                                        <!-- First Form -->
+                                        <form class="mt-10">
+                                            <input type="checkbox" name="Checkbox" id="check-3">
+                                            <label class="p-relative" for="check-3">This Week</label>
+
+                                            <input type="checkbox" name="Checkbox" id="check-4">
+                                            <label class="p-relative" for="check-4">Last Week</label>
+                                        </form>
+
+                                        <!-- Second Form -->
+                                        <form class="mt-10">
+                                            <input type="checkbox" name="Checkbox" id="check-5">
+                                            <label class="p-relative" for="check-5">This Month</label>
+
+                                            <input type="checkbox" name="Checkbox" id="check-6">
+                                            <label class="p-relative" for="check-6">Last Month</label>
+                                        </form>
+
+                                        <!-- Third Form -->
+                                        <form class="mt-10">
+                                            <input type="checkbox" name="Checkbox" id="check-7">
+                                            <label class="p-relative" for="check-7">This Year</label>
+
+                                            <input type="checkbox" name="Checkbox" id="check-8">
+                                            <label class="p-relative" for="check-8">Last Year</label>
+                                        </form>
+
+                                        <form class="mt-15 p-relative">
+                                            <input type="checkbox" name="Checkbox" id="check-9">
+                                            <label class="p-relative" for="check-9">This Year</label>
+                                        </form>
+
+                                        <div class="submit-type mt-15">
+                                            <input class="trans-3s" type="submit" name="Filter" value="Fleter">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bottom rad-6 p-relative trans-3s fs-14">
+                                <span>Share</span>
+                            </div>
+
+                            <span class="bottom rad-6 trans-3s fs-14">
+                                Bulk Action
+                                <i class="fa-solid fa-chevron-down ml-8"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="responsive-table rad-6">
+                        <table class="w-full fs-14">
+                            <thead>
+                                <tr>
+                                    <td class="p-15 p-relative">Product Name</td>
+                                    <td class="p-15 p-relative">Category</td>
+                                    <td class="p-15 p-relative">Unit Price</td>
+                                    <td class="p-15 p-relative">In-Stack</td>
+                                    <td class="p-15 p-relative">Discount</td>
+                                    <td class="p-15 p-relative">Total Value</td>
+                                    <td class="p-15 p-relative">Action</td>
+                                    <td class="p-15 p-relative">Status</td>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <!-- First Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-1.svg" alt="">
+                                        <span class="ml-8">Iphone 13 Pro</span>
+                                    </td>
+                                    <td>Gadgets</td>
+                                    <td>₦1.520.000</td>
+                                    <td>8</td>
+                                    <td>₦0.00</td>
+
+                                    <td>₦50,000.00</td>
+
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-alt-blue c-blue">
+                                            Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Second Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-2.svg" alt="">
+                                        <span class="ml-8">Iphone 12 Pro</span>
+                                    </td>
+                                    <td>Gadgets</td>
+                                    <td>₦1.215.520</td>
+                                    <td>12</td>
+                                    <td>₦0.00</td>
+                                    <td>₦50,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-alt-blue c-blue">
+                                            Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Third Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-3.svg" alt="">
+                                        <span class="ml-8">Polo T-shirt</span>
+                                    </td>
+                                    <td>Fashion</td>
+                                    <td>₦1.215.520</td>
+                                    <td>120</td>
+                                    <td>₦0.00</td>
+                                    <td>₦50,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Un-Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-yellow c-black">
+                                            Un-Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Fourth Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-3.svg" alt="">
+                                        <span class="ml-8">Polo T-shirt</span>
+                                    </td>
+                                    <td>Fashion</td>
+                                    <td>₦1.215.520</td>
+                                    <td style="color: var(--icon-color);">Out Of Stack</td>
+                                    <td>₦0.00</td>
+                                    <td>₦50,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Un-Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-yellow c-black">
+                                            Un-Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Fifth Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-3.svg" alt="">
+                                        <span class="ml-8">Polo T-shirt</span>
+                                    </td>
+                                    <td>Fashion</td>
+                                    <td>₦1.215.520</td>
+                                    <td style="color: var(--icon-color);">Out Of Stack</td>
+                                    <td>₦0.00</td>
+                                    <td>₦50,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Un-Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-yellow c-black">
+                                            Un-Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Sixth Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-2.svg" alt="">
+                                        <span class="ml-8">Iphone 12 Pro</span>
+                                    </td>
+                                    <td>Gadgets</td>
+                                    <td>₦1.215.520</td>
+                                    <td>12</td>
+                                    <td>₦0.00</td>
+                                    <td>₦50,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-alt-blue c-blue">
+                                            Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Seveneth Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-1.svg" alt="">
+                                        <span class="ml-8">Iphone 13 Pro</span>
+                                    </td>
+                                    <td>Gadgets</td>
+                                    <td>₦1.520.000</td>
+                                    <td>8</td>
+                                    <td>₦0.00</td>
+
+                                    <td>₦50,000.00</td>
+
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-alt-blue c-blue">
+                                            Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Eighth Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-2.svg" alt="">
+                                        <span class="ml-8">Iphone 12 Pro</span>
+                                    </td>
+                                    <td>Gadgets</td>
+                                    <td>₦1.215.520</td>
+                                    <td>12</td>
+                                    <td>₦0.00</td>
+                                    <td>₦50,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-alt-blue c-blue">
+                                            Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Nineth Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-1.svg" alt="">
+                                        <span class="ml-8">Iphone 13 Pro</span>
+                                    </td>
+                                    <td>Gadgets</td>
+                                    <td>₦1.215.520</td>
+                                    <td>12</td>
+                                    <td>₦0.00</td>
+                                    <td>₦50,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-alt-blue c-blue">
+                                            Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Tenth Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-3.svg" alt="">
+                                        <span class="ml-8">Polo T-shirt</span>
+                                    </td>
+                                    <td>Fashion</td>
+                                    <td>₦1.215.520</td>
+                                    <td style="color: var(--icon-color);">Out Of Stack</td>
+                                    <td>₦0.00</td>
+                                    <td>₦50,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Un-Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-yellow c-black">
+                                            Un-Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Eleveneth Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-3.svg" alt="">
+                                        <span class="ml-8">Polo T-shirt</span>
+                                    </td>
+                                    <td>Fashion</td>
+                                    <td>₦1.215.520</td>
+                                    <td style="color: var(--icon-color);">Out Of Stack</td>
+                                    <td>₦0.00</td>
+                                    <td>₦50,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Un-Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-yellow c-black">
+                                            Un-Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Tweleveth Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-3.svg" alt="">
+                                        <span class="ml-8">Polo T-shirt</span>
+                                    </td>
+                                    <td>Fashion</td>
+                                    <td>₦1.215.520</td>
+                                    <td style="color: var(--icon-color);">Out Of Stack</td>
+                                    <td>₦0.00</td>
+                                    <td>₦50,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Un-Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-yellow c-black">
+                                            Un-Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Thirteen Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-2.svg" alt="">
+                                        <span class="ml-8">Iphone 12 Pro</span>
+                                    </td>
+                                    <td>Gadgets</td>
+                                    <td>₦1.215.520</td>
+                                    <td>12</td>
+                                    <td>₦0.00</td>
+                                    <td>₦50,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-alt-blue c-blue">
+                                            Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Fourteen Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-2.svg" alt="">
+                                        <span class="ml-8">Iphone 12 Pro</span>
+                                    </td>
+                                    <td>Gadgets</td>
+                                    <td>₦1.215.520</td>
+                                    <td>12</td>
+                                    <td>₦0.00</td>
+                                    <td>₦50,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-alt-blue c-blue">
+                                            Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Fifteen Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-1.svg" alt="">
+                                        <span class="ml-8">Iphone 13 Pro</span>
+                                    </td>
+                                    <td>Gadgets</td>
+                                    <td>₦1.520.000</td>
+                                    <td>8</td>
+                                    <td>₦0.00</td>
+
+                                    <td>₦50,000.00</td>
+
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-alt-blue c-blue">
+                                            Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Sixteen Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-1.svg" alt="">
+                                        <span class="ml-8">Iphone 13 Pro</span>
+                                    </td>
+                                    <td>Gadgets</td>
+                                    <td>₦1.520.000</td>
+                                    <td>8</td>
+                                    <td>₦0.00</td>
+
+                                    <td>₦50,000.00</td>
+
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-alt-blue c-blue">
+                                            Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Seventeen Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-3.svg" alt="">
+                                        <span class="ml-8">Polo T-shirt</span>
+                                    </td>
+                                    <td>Fashion</td>
+                                    <td>₦1.215.520</td>
+                                    <td>120</td>
+                                    <td>₦0.00</td>
+                                    <td>₦50,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Un-Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-yellow c-black">
+                                            Un-Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Eighteen Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-3.svg" alt="">
+                                        <span class="ml-8">Polo T-shirt</span>
+                                    </td>
+                                    <td>Fashion</td>
+                                    <td>₦1.215.520</td>
+                                    <td>120</td>
+                                    <td>₦0.00</td>
+                                    <td>₦50,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Un-Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-yellow c-black">
+                                            Un-Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Nineteen Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-3.svg" alt="">
+                                        <span class="ml-8">Polo T-shirt</span>
+                                    </td>
+                                    <td>Fashion</td>
+                                    <td>₦1.215.520</td>
+                                    <td>120</td>
+                                    <td>₦0.00</td>
+                                    <td>₦50,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Un-Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-yellow c-black">
+                                            Un-Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Twenty Row -->
+                                <tr>
+                                    <td class="d-flex align-center">
+                                        <img src="images/product-2.svg" alt="">
+                                        <span class="ml-8">Iphone 12 Pro</span>
+                                    </td>
+                                    <td>Gadgets</td>
+                                    <td>₦1.215.520</td>
+                                    <td>12</td>
+                                    <td>₦0.00</td>
+                                    <td>₦50,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Publish
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-alt-blue c-blue">
+                                            Published
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="bottom-info d-flex space-between w-flex">
+                        <div class="left d-flex gap-15 mt-15 align-center w-flex">
+                            <span class="fs-12">
+                                10
+                                <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                            </span>
+
+                            <span class="fs-14">Items Per Page</span>
+                            <h3 class="m-0 fs-14">1-10 of 200 items</h3>
+                        </div>
+
+                        <div class="right mt-15 gap-15 align-center d-flex w-flex">
+                            <span class="fs-12">
+                                1
+                                <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                            </span>
+                            
+                            <span class="fs-14">Of 44 Page</span>
+
+                            <span class="fs-12">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Table -->
+            </div>
+        </div>
+        <!-- End Page -->
+    </body>
+</html>

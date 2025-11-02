@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Orders</title>
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Our Own Framework -->
+        <link rel="stylesheet" href="css/framework.css">
+        <!-- Our Css File -->
+        <link rel="stylesheet" href="css/orders.css">
+    </head>
+
+    <body>
+        <!-- Start Page -->
+        <div class="page d-flex">
+            <!-- Start SideBar  -->
+            <div class="sidebar p-relative p-20">
+                <div class="intro d-flex">
+                    <i class="fa-brands fa-codiepie"></i>
+                    <h2 class="m-0 fs-20">Matrix</h2>
+                </div>
+
+                <!-- Start Ul Links -->
+                <div class="ul-links">
+                    <ul class="m-0 mt-15 pl-20 flex-1">
+                    <!-- First Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="index.html">
+                            <i class="fa-solid fa-list"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <!-- Second Ii -->
+                    <li class="active mb-15 trans-3s">
+                        <a href="orders.html">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>Orders</span>
+                        </a>
+                    </li>
+
+                    <!-- Third Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="customers.html">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span>Customers</span>
+                        </a>
+                    </li>
+
+                    <!-- Fourth Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="inventory.html">
+                            <i class="fa-solid fa-folder-open"></i>
+                            <span>Inventory</span>
+                        </a>
+                    </li>
+
+                    <!-- Fifth Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="conversations.html">
+                            <i class="fa-solid fa-comment-dots"></i>
+                            <span>Conversations</span>
+                        </a>
+                    </li>
+
+                    <!-- Sixth Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="settings.html">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    </ul>
+                    <!-- End Ul Links -->
+
+                    <!-- Start Another Ul Links -->
+                
+                    <ul class="m-0 pl-20">
+                    <li class="mb-15 trans-3s">
+                        <a href="#">
+                            <i class="fa-solid fa-headphones c-black"></i>
+                            <span>Contact Support</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-15 trans-3s">
+                        <a href="#">
+                            <i class="fa-solid fa-gift c-black"></i>
+                            <span>Free Gift Awaits You!</span>
+                            <br>
+                            <span>Upgrade your account </span>
+                            <i class="fa-solid fa-arrow-right c-black" style="font-size: 11px;"></i>
+                        </a>
+                    </li>
+
+                    <li class="trans-3s">
+                        <a href="#">
+                            <i class="fa-solid fa-right-from-bracket c-red"></i>
+                            <span class="c-red fs-14">LogOut</span>
+                        </a>
+                    </li>
+                    </ul>
+                <!-- End Another Ul Links -->
+                </div>
+            </div>
+            <!-- End SideBar -->
+
+            <!-- Start Content -->
+            <div class="content w-full">
+                <div class="head bg-white">
+                    <div class="user-title d-flex p-10 pl-15 space-between">
+                        <div class="title">
+                            <h2 class="m-0 fs-20">Orders</h2>
+                        </div>
+
+                        <div class="user-shop d-flex">
+                            <h3 class="m-0 p-relative trans-3s fs-14 m-auto mr-15 rad-15">
+                                Ayoub's Shop
+                                <i class="fa-solid fa-chevron-down fs-12 pl-8"></i>
+                            </h3>
+                            <i class="fa-solid fa-bell m-auto mr-15"></i>
+                            <img class="rad-6 m-auto" src="images/user-profile.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="order-info w-full c-blue">
+                        <i class="fa-solid fa-house w-fit"></i>
+                        <span class="fs-14 ml-30 p-relative">Orders</span>
+                    </div>
+                </div>
+
+                <div class="header d-flex p-relative">
+                    <h1 class="m-0 flex-1 fs-20 m-20">Orders Summary</h1>
+                    <div class="new-order mt-20">
+                        <span href="" class="bottom-click trans-3s rad-10 m-auto mr-20 c-white pr-20">
+                            <i class="fa-solid fa-plus"></i>
+                            Create Another Order
+                        </span>
+
+                        <div class="custom-order rad-6 p-30 p-absolute bg-white">
+                            <h3 class="m-0 mb-20 c-black">Create New Order</h3>
+                            <div class="total-info d-flex gap-30">
+                                <div class="left">
+                                    <div class="top d-flex">
+                                        <span>Order Details</span>
+                                        <span>New Customer</span>
+                                        <label>
+                                            <input class="toggle-checkbox" type="checkbox">
+                                            <div class="toggle-switch p-relative ml-15 rad-20 trans-3s"></div>
+                                        </label>
+                                    </div>
+                                    <div class="customer p-relative mt-10 mb-20">
+                                        <select class="rad-6 p-10 fs-14 w-full" name="customer">
+                                            <option class="fs-14" value="text">Select Customer</option>                                            
+                                            <option class="fs-14" value="customer-1">Janet Adebayo</option>
+                                            <option class="fs-14" value="customer-2">Samuel Johnson</option>
+                                            <option class="fs-14" value="customer-3">Francis Doe</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="info d-flex space-between gap-10 p-relative mb-15">
+                                        <div class="content w-full p-relative">
+                                            <select class="p-10 w-full rad-6 fs-14" name="Payment">
+                                                <option value="Payment-1">Payment Type</option>
+                                                <option value="Payment-2">PayPal</option>
+                                                <option value="Payment-3">Stripe</option>
+                                                <option value="Payment-4">Skrill</option>
+                                                <option value="Payment-5">Payoneer</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="content w-full p-relative">
+                                            <select class="p-10 w-full rad-6 fs-14" name="order-type">
+                                                <option value="order-1">Pick Up</option>
+                                                <option value="order-2">Home Delivery</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="info d-flex space-between">
+                                        <div>
+                                            <h4 class="m-0 fs-12">Order Time & Date</h4>
+                                            <input class="p-10 rad-6 fs-14" type="date" name="Date">
+                                        </div>
+
+                                        <div class="mt-auto">
+                                            <input class="p-10 rad-6 fs-14" type="time" name="Time">
+                                        </div>
+                                    </div>
+
+                                    <div class="info mt-15 mb-15">
+                                        <h4 class="m-0">Order Status</h4>
+                                        <div class="content p-relative">
+                                            <select class="p-10 rad-6 w-full fs-14" name="Order_status">
+                                                <option value="status-1">Pending</option>
+                                                <option value="status-2">In-Progress</option>
+                                                <option value="status-3">Completed</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="info">
+                                        <textarea class="fs-14 rad-6 p-10 w-full" name="order-note" placeholder="Order Note"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="right">
+                                    <h3 class="m-0">Item</h3>
+                                    <div class="p-relative">
+                                        <input class="p-10 fs-14 rad-6 trans-3s w-full" type="search" name="Product" placeholder="Search Product Name">
+                                    </div>
+
+                                    <div class="product-case txt-center">
+                                        <div class="txt-center rad-half trans-3s">
+                                            <i class="fa-solid fa-briefcase"></i>
+                                        </div>
+                                            <h2 class="m-0 fs-25 txt-center">Add Product To your Order</h2>
+                                        <span>Search and add Products to this Order</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="actions d-flex mt-20 gap-30">
+                                <div class="cancel-order rad-20 fs-14 trans-3s">
+                                    <h3 class="m-0">Cancel</h3>
+                                </div>
+                                
+                                <div class="create-order rad-20 fs-14 trans-3s">
+                                    <h3 class="m-0">Create Order</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Start Cards -->
+                <div class="cards-info d-grid gap-20 ml-20 mr-20">
+                    <!-- First Card -->
+                    <div class="card rad-6 p-15 bg-white">
+                        <div class="top d-flex space-between">
+                            <div class="icon trans-3s rad-6 p-10">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div class="week">
+                                <span class="trans-3s">
+                                    This week
+                                    <i class="fa-solid fa-chevron-down ml-8"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="info d-flex mt-20 gap-100 p-relative">
+                            <div class="orders">
+                                <span style="color: var(--text-color);" class="fs-14">All Orders</span>
+                                <h3 class="m-0">
+                                    520
+                                </h3>
+                            </div>
+
+                            <div class="pending">
+                                <span style="color: var(--text-color);">Pending</span>
+                                <h3 class="m-0">8</h3>
+                            </div>
+
+                            <div class="completed">
+                                <span style="color: var(--text-color);">Completed</span>
+                                <h3 class="m-0">
+                                    410
+                                </h3>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <!-- Second Card -->
+                    <div class="card rad-6 p-15 bg-white">
+                        <div class="top d-flex space-between">
+                            <div class="icon trans-3s rad-6 p-10">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div class="week">
+                                <span class="trans-3s">
+                                    This week
+                                    <i class="fa-solid fa-chevron-down ml-8"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="info d-flex mt-20 gap-100 p-relative">
+                            <div class="orders">
+                                <span style="color: var(--text-color);" class="fs-14">Canceled</span>
+                                <h3 class="m-0">
+                                    30
+                                    <span class="minus">-20%</span>
+                                </h3>
+                            </div>
+
+                            <div class="pending">
+                                <span style="color: var(--text-color);">Returend</span>
+                                <h3 class="m-0">45</h3>
+                            </div>
+
+                            <div class="completed">
+                                <span style="color: var(--text-color);">Damaged</span>
+                                <h3 class="m-0">
+                                    15
+                                </h3>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <!-- Third Card -->
+                    <div class="card rad-6 p-15 bg-white">
+                        <div class="top d-flex space-between">
+                            <div class="icon trans-3s rad-6 p-10">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div class="week">
+                                <span class="trans-3s">
+                                    This week
+                                    <i class="fa-solid fa-chevron-down ml-8"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="info d-flex mt-20 gap-100 p-relative">
+                            <div class="orders">
+                                <span style="color: var(--color-red);" class="fs-14">Aboundend Cart</span>
+                                <h3 class="m-0">
+                                    20% 
+                                    <span class="plus">+0.25%</span>
+                                </h3>
+                            </div>
+
+                            <div class="pending">
+                                <span style="color: var(--text-color);">Customers</span>
+                                <h3 class="m-0">55</h3>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <!-- End Cards -->
+
+                <!-- Start Table -->
+                <div class="table p-20 rad-6 bg-white m-20">
+                    <div class="header d-flex">
+                        <h3 class="m-0 flex-1 fs-18">Customer Orders</h3>
+                        <div class="options d-flex gap-20 align-center" style="text-align: left;">
+                            <div class="search-bar p-relative">
+                                <form>
+                                    <input class="trans-3s rad-6 fs-12" type="search" placeholder="Search" name="Search">
+                                </form>
+                            </div>
+
+                            <div class="bottom hover-option rad-6 p-relative trans-3s fs-14">
+                                <span>Filter</span>
+                                <div class="option trans-3s">
+                                    <h3 class="m-0 fs-16 mb-10" style="color: black;">Filter</h3>
+                                    <div class="order-type mb-25">
+                                        <span>Order Type</span>
+                                        <form class="mt-10">
+                                            <input type="checkbox" name="Checkbox" id="check-1">
+                                            <label class="p-relative" for="check-1">Home Delivery</label>
+
+                                            <input type="checkbox" name="Checkbox" id="check-2">
+                                            <label class="p-relative" for="check-2">Pick Up</label>
+                                        </form>
+                                    </div>
+
+                                    <div class="status-type mb-10 p-relative">
+                                        <span>Status</span>
+                                        <form class="mt-10 p-relative w-fit">
+                                            <select class="rad-6" name="status" id="status">
+                                                <option value="all">All</option>
+                                                <option value="status-2">Pending</option>
+                                                <option value="status-3">In-Progress</option>
+                                                <option value="status-4">Completed</option>
+                                            </select>
+                                        </form>
+                                    </div>
+
+                                    <div class="customer-type p-relative">
+                                        <span>Customer</span>
+                                        <form class="mt-10 w-fit p-relative">
+                                            <select class="rad-6" name="customer" id="customer">
+                                                <option value="all">All</option>
+                                                <option value="customer-1">Janet Adebayo</option>
+                                                <option value="customer-2">Samuel Johnson</option>
+                                                <option value="customer-3">Francis Doe</option>
+                                            </select>
+                                        </form>
+                                    </div>
+
+                                    <div class="amount-type p-relative mt-10 mb-15">
+                                        <span>Amount</span>
+                                        <br>
+                                        <span>From</span>
+                                        <div class="price mt-10">
+                                            <form>
+                                                <input type="number" value="0.00" name="Price">
+                                            </form>
+
+                                            <span class="p-absolute">To</span>
+                                            <br>
+                                            <form>
+                                                <input type="number" name="Price" value="0.00">
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="submit-type">
+                                        <input class="trans-3s" type="submit" name="Filter" value="Fleter">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bottom hover-option rad-6 p-relative trans-3s fs-14">
+                                <span>Date</span>
+                                <div class="option trans-3s">
+                                    <h3 class="m-0 fs-16 mb-10" style="color: black;">By Date</h3>
+                                    <div class="order-type mt-15">
+                                        <!-- First Form -->
+                                        <form class="mt-10">
+                                            <input type="checkbox" name="Checkbox" id="check-3">
+                                            <label class="p-relative" for="check-3">This Week</label>
+
+                                            <input type="checkbox" name="Checkbox" id="check-4">
+                                            <label class="p-relative" for="check-4">Last Week</label>
+                                        </form>
+
+                                        <!-- Second Form -->
+                                        <form class="mt-10">
+                                            <input type="checkbox" name="Checkbox" id="check-5">
+                                            <label class="p-relative" for="check-5">This Month</label>
+
+                                            <input type="checkbox" name="Checkbox" id="check-6">
+                                            <label class="p-relative" for="check-6">Last Month</label>
+                                        </form>
+
+                                        <!-- Third Form -->
+                                        <form class="mt-10">
+                                            <input type="checkbox" name="Checkbox" id="check-7">
+                                            <label class="p-relative" for="check-7">This Year</label>
+
+                                            <input type="checkbox" name="Checkbox" id="check-8">
+                                            <label class="p-relative" for="check-8">Last Year</label>
+                                        </form>
+
+                                        <form class="mt-15 p-relative">
+                                            <input type="checkbox" name="Checkbox" id="check-9">
+                                            <label class="p-relative" for="check-9">This Year</label>
+                                        </form>
+
+                                        <div class="submit-type mt-15">
+                                            <input class="trans-3s" type="submit" name="Filter" value="Fleter">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bottom rad-6 p-relative trans-3s fs-14">
+                                <span>Share</span>
+                            </div>
+
+                            <span class="bottom rad-6 trans-3s fs-14">
+                                Bulk Action
+                                <i class="fa-solid fa-chevron-down ml-8"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="responsive-table rad-6">
+                        <table class="w-full fs-14">
+                            <thead>
+                                <tr>
+                                    <td class="p-15 p-relative">Customer Name</td>
+                                    <td class="p-15 p-relative">Order Date</td>
+                                    <td class="p-15 p-relative">Order Type</td>
+                                    <td class="p-15 p-relative">Tracking ID</td>
+                                    <td class="p-15 p-relative">Order Total</td>
+                                    <td class="p-15 p-relative">Action</td>
+                                    <td class="p-15 p-relative">Status</td>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <!-- First Row -->
+                                <tr>
+                                    <td>Janet Adebayo</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Home Delivery</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-green c-green">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Second Row -->
+                                <tr>
+                                    <td>Samuel Johnson</td>
+                                    <td>25 Aug 2022 - 5:50 pm</td>
+                                    <td>Home Delivery</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N35,050.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            In-Progress
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-alt-blue c-blue">
+                                            In-Progress
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Third Row -->
+                                <tr>
+                                    <td>Francis Doe</td>
+                                    <td>5 Aug 2022 - 10:15 am</td>
+                                    <td>Pick Up</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N55,150.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Pending
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-yellow">
+                                            Pending
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Fourth Row -->
+                                <tr>
+                                    <td>Christian Dior</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Pick Up</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-green c-green">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Fifth Row -->
+                                <tr>
+                                    <td>Christian Dior</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Pick Up</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-green c-green">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Sixth Row -->
+                                <tr>
+                                    <td>Janet Adebayo</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Home Delivery</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-green c-green">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Seveneth Row -->
+                                <tr>
+                                    <td>Samuel Johnson</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Home Delivery</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            In-Progress
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-alt-blue c-blue">
+                                            In-Progress
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Eighth Row -->
+                                <tr>
+                                    <td>Francis Doe</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Pick Up</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Pending
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-yellow">
+                                            Pending
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Nineth Row -->
+                                <tr>
+                                    <td>Christian Dior</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Pick Up</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-green c-green">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Tenth Row -->
+                                <tr>
+                                    <td>Janet Adebayo</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Pick Up</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-green c-green">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Eleveneth Row -->
+                                <tr>
+                                    <td>Janet Adebayo</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Home Delivery</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-green c-green">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Tweleveth Row -->
+                                <tr>
+                                    <td>Janet Adebayo</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Home Delivery</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-green c-green">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Thirteen Row -->
+                                <tr>
+                                    <td>Samuel Johnson</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Home Delivery</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            In-Progress
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-alt-blue c-blue">
+                                            In-Progress
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Fourteen Row -->
+                                <tr>
+                                    <td>Janet Adebayo</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Home Delivery</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Pending
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-yellow">
+                                            Pending
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Fifteen Row -->
+                                <tr>
+                                    <td>Janet Adebayo</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Pick Up</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-green c-green">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Sixteen Row -->
+                                <tr>
+                                    <td>Janet Adebayo</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Pick Up</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-green c-green">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Seventeen Row -->
+                                <tr>
+                                    <td>Janet Adebayo</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Home Delivery</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-green c-green">
+                                            Completed
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Eighteen Row -->
+                                <tr>
+                                    <td>Janet Adebayo</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Home Delivery</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            In-Progress
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-alt-blue c-blue">
+                                            In-Progress
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Nineteen Row -->
+                                <tr>
+                                    <td>Janet Adebayo</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Pick Up</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            Pending
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-yellow">
+                                            Pending
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Twenty Row -->
+                                <tr>
+                                    <td>Janet Adebayo</td>
+                                    <td>12 Aug 2022 - 12:25 am</td>
+                                    <td>Pick Up</td>
+                                    <td>
+                                        9348fjr73
+                                        <img src="images/id-img.svg" alt="">
+                                    </td>
+                                    <td>N25,000.00</td>
+                                    <td>
+                                        <span class="btn-shape bg-gray">
+                                            In-Progress
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="btn-shape bg-alt-blue c-blue">
+                                            In-Progress
+                                            <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="bottom-info d-flex space-between w-flex">
+                        <div class="left d-flex gap-15 mt-15 align-center w-flex">
+                            <span class="fs-12">
+                                10
+                                <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                            </span>
+
+                            <span class="fs-14">Items Per Page</span>
+                            <h3 class="m-0 fs-14">1-10 of 200 items</h3>
+                        </div>
+
+                        <div class="right mt-15 gap-15 align-center d-flex w-flex">
+                            <span class="fs-12">
+                                1
+                                <i class="fa-solid fa-chevron-down ml-8 fs-12"></i>
+                            </span>
+                            
+                            <span class="fs-14">Of 44 Page</span>
+
+                            <span class="fs-12">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Table -->
+            </div>
+        </div>
+        <!-- End Page -->
+    </body>
+</html>

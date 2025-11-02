@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Our Own Framework -->
+        <link rel="stylesheet" href="css/framework.css">
+        <!-- Our Css File -->
+        <link rel="stylesheet" href="css/master.css">
+    </head>
+
+    <body>
+        <!-- Start Page -->
+        <div class="page d-flex">
+            <!-- Start SideBar  -->
+            <div class="sidebar p-relative p-20">
+                <div class="intro d-flex">
+                    <i class="fa-brands fa-codiepie"></i>
+                    <h2 class="m-0 fs-20">Matrix</h2>
+                </div>
+
+                <!-- Start Ul Links -->
+                <div class="ul-links">
+                    <ul class="m-0 mt-15 pl-20 flex-1">
+                    <!-- First Ii -->
+                    <li class="active mb-15 trans-3s">
+                        <a href="index.html">
+                            <i class="fa-solid fa-list"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <!-- Second Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="orders.html">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>Orders</span>
+                        </a>
+                    </li>
+
+                    <!-- Third Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="customers.html">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span>Customers</span>
+                        </a>
+                    </li>
+
+                    <!-- Fourth Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="inventory.html">
+                            <i class="fa-solid fa-folder-open"></i>
+                            <span>Inventory</span>
+                        </a>
+                    </li>
+
+                    <!-- Fifth Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="conversations.html">
+                            <i class="fa-solid fa-comment-dots"></i>
+                            <span>Conversations</span>
+                        </a>
+                    </li>
+
+                    <!-- Sixth Ii -->
+                    <li class="mb-15 trans-3s">
+                        <a href="settings.html">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    </ul>
+                    <!-- End Ul Links -->
+
+                    <!-- Start Another Ul Links -->
+                
+                    <ul class="m-0 pl-20">
+                    <li class="mb-15 trans-3s">
+                        <a href="#">
+                            <i class="fa-solid fa-headphones c-black"></i>
+                            <span>Contact Support</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-15 trans-3s">
+                        <a href="#">
+                            <i class="fa-solid fa-gift c-black"></i>
+                            <span>Free Gift Awaits You!</span>
+                            <br>
+                            <span>Upgrade your account </span>
+                            <i class="fa-solid fa-arrow-right c-black" style="font-size: 11px;"></i>
+                        </a>
+                    </li>
+
+                    <li class="trans-3s">
+                        <a href="#">
+                            <i class="fa-solid fa-right-from-bracket c-red"></i>
+                            <span class="c-red fs-14">LogOut</span>
+                        </a>
+                    </li>
+                    </ul>
+                <!-- End Another Ul Links -->
+                </div>
+            </div>
+            <!-- End SideBar -->
+
+            <!-- Start Content -->
+            <div class="content w-full">
+                <div class="head">
+                    <div class="user-title d-flex p-10 pl-15">
+                        <div class="title">
+                            <h2 class="m-0">Dashboard</h2>
+                        </div>
+
+                        <div class="user-shop d-flex">
+                            <h3 class="m-0 p-relative trans-3s">
+                                Ayoub's Shop
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </h3>
+                            <i class="fa-solid fa-bell"></i>
+                            <img src="images/user-profile.svg" alt="">
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-house"></i>
+                </div>
+
+                <!-- Start Wrapper -->
+                <div class="cards-info d-grid">
+                    <!-- First Card -->
+                    <div class="card">
+                        <div class="top d-flex space-between">
+                            <div class="icon trans-3s">
+                                <i class="fa-brands fa-codiepie"></i>
+                            </div>
+                            <div class="week">
+                                <span class="trans-3s">
+                                    This week
+                                    <i class="fa-solid fa-chevron-down ml-8"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="info d-flex mt-20 gap-25 p-relative">
+                            <div class="sales">
+                                <span>Sales</span>
+                                <h3 class="m-0">N4,000,000,00</h3>
+                            </div>
+
+                            <div class="vulome">
+                                <span>Vulome</span>
+                                <h3 class="m-0">
+                                    450
+                                    <span class="plus">+20.00%</span>
+                                </h3>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Card -->
+                    <div class="card">
+                        <div class="top d-flex space-between">
+                            <div class="icon trans-3s">
+                                <i class="fa-solid fa-user-group"></i>
+                            </div>
+                            <div class="week">
+                                <span class="trans-3s">
+                                    This week
+                                    <i class="fa-solid fa-chevron-down ml-8"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="info d-flex mt-20 gap-25 p-relative">
+                            <div class="customers">
+                                <span>Customers</span>
+                                <h3 class="m-0">
+                                    1,250
+                                    <span class="plus">+15.18%</span>
+                                </h3>
+                            </div>
+
+                            <div class="active">
+                                <span>Active</span>
+                                <h3 class="m-0">
+                                    1,180
+                                    <span class="plus">85%</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third Card -->
+                    <div class="card">
+                        <div class="top d-flex space-between">
+                            <div class="icon trans-3s">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div class="week">
+                                <span class="trans-3s">
+                                    This week
+                                    <i class="fa-solid fa-chevron-down ml-8"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="info d-flex mt-20 gap-25 p-relative">
+                            <div class="orders">
+                                <span>All Orders</span>
+                                <h3 class="m-0">
+                                    450
+                                </h3>
+                            </div>
+
+                            <div class="pending">
+                                <span>Pending</span>
+                                <h3 class="m-0">5</h3>
+                            </div>
+
+                            <div class="completed">
+                                <span>Completed</span>
+                                <h3 class="m-0">
+                                    445
+                                </h3>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <!-- Fourth Card -->
+                    <div class="card">
+                        <div class="top d-flex space-between">
+                            <div class="icon trans-3s">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                            <div class="week">
+                                <span class="trans-3s">
+                                    This week
+                                    <i class="fa-solid fa-chevron-down ml-8"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="info d-flex mt-20 gap-25 p-relative">
+                            <div class="facebook">
+                                <span>Facebook Users</span>
+                                <h3 class="m-0">1,850K</h3>
+                            </div>
+
+                            <div class="instagram">
+                                <span>Instagram Users</span>
+                                <h3 class="m-0">30,501K</h3>
+                            </div>
+
+                            <div class="tiktok">
+                                <span>TikTok Users</span>
+                                <h3 class="m-0">12,820K</h3>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <!-- End Wrapper --> 
+                <!-- Start Dashboard-summary -->
+                <div class="dashboard-summary d-flex p-20">
+                    <div class="left">
+                        <!-- marketting -->
+                        <div class="marketting d-flex">
+                            <div class="left-card p-15">
+                                <div class="top d-flex">
+                                    <h3 class="m-0 flex-1 fs-16">Marketting</h3> 
+                                    <span class="trans-3s">
+                                        This Week
+                                        <i class="fa-solid fa-chevron-down ml-8"></i>
+                                    </span>
+                                </div>
+
+                                <div class="bottom">
+                                    <div class="keys mt-15">
+                                        <span class="blue p-relative">Acquisition</span>
+                                        <span class="primary p-relative">Purchase</span>
+                                        <span class="yellow p-relative">Retention</span>
+                                    </div>
+
+                                    <div class="chart-state p-relative">
+                                        <img src="images/circle-chart.svg" alt="Circle Chart" class="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shop-cards">
+                            <div class="right-card p-15">
+                                <div class="top d-flex space-between">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-folder-open"></i>
+                                    </div>
+                                    <div class="week">
+                                        <span class="trans-3s" style="color: white;">
+                                            This week
+                                            <i class="fa-solid fa-chevron-down ml-8"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="bottom d-flex mt-15">
+                                    <div class="info">
+                                        <h3 class="m-0 mb-10">All Products</h3>
+                                        <span>45</span>
+                                        <span class="plus" style="color: white;">+0.00%</span>
+                                    </div>
+                                    <div class="info">
+                                        <h3 class="m-0  mb-10">Active</h3>
+                                        <span>32</span>
+                                        <span class="plus" style="color: white;">+24%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bottom-card mt-15">
+                                <div class="top d-flex space-between">
+                                    <div class="icon fs-25">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                    <div class="week">
+                                        <span class="trans-3s">
+                                            This week
+                                            <i class="fa-solid fa-chevron-down ml-8"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="bottom d-flex p-relative">
+                                    <div class="info p-absolute">
+                                        <h3 class="m-0 mb-10">Abondend Card</h3>
+                                        <span>20%</span>
+                                        <span class="plus">+0,00%</span>
+                                    </div>
+
+                                    <div class="info p-absolute">
+                                        <h3 class="m-0 mb-10">Customers</h3>
+                                        <span>30</span>
+                                        <span class="plus">+0.00%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- summary Overview -->
+                        <div class="summary-overview mt-15">
+                            <div class="top d-flex p-relative">
+                                <div class="left d-flex flex-1">
+                                    <h3 class="m-0 fs-14">Summary</h3>
+                                    <span class="fs-13">
+                                        Sales
+                                        <i class="fa-solid fa-chevron-down ml-8"></i>
+                                    </span>
+                                </div>
+
+                                <div class="right">
+                                    <div class="week">
+                                        <span class="trans-3s">
+                                            Last 7 Days
+                                        <i class="fa-solid fa-chevron-down ml-8"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bottom p-relative mb-15">
+                                <div class="progress-table">
+                                    <!-- First Progress -->
+                                    <div class="progress">
+                                        <span class="bg-blue blue" style="height: 85%;"></span>
+                                        <span>Sep 10</span>
+                                    </div>
+                                        
+
+                                    <!-- Second Progress -->
+                                    <div class="progress">
+                                        <span class="bg-blue blue" style="height: 40%;"></span>
+                                        <span>Sep 11</span>
+                                    </div>
+
+                                    <!-- Third Progress -->
+                                    <div class="progress">
+                                        <span class="bg-blue blue" style="height: 65%;"></span>
+                                        <span>Sep 12</span>
+                                    </div>
+
+                                    <!-- Fourth Progress -->
+                                    <div class="progress">
+                                        <span class="bg-blue blue" style="height: 30%;"></span>
+                                        <span>Sep 13</span>
+                                    </div>
+
+                                    <!-- Fifth Progress -->
+                                    <div class="progress">
+                                        <span class="bg-blue blue" style="height: 85%;"></span>
+                                        <span>Sep 14</span>
+                                    </div>
+
+                                    <!-- Sixth Progress -->
+                                    <div class="progress">
+                                        <span class="bg-blue blue" style="height: 50%;"></span>
+                                        <span>Sep 15</span>
+                                    </div>
+
+                                    <!-- Seveneth Progress -->
+                                    <div class="progress">
+                                        <span class="bg-blue blue" style="height: 80%;"></span>
+                                        <span>Sep 16</span>
+                                    </div>
+                                </div>
+
+                                <div class="column-numbers d-flex mt-15">
+                                    <span>100K</span>
+                                    <span>80K</span>
+                                    <span>60K</span>
+                                    <span>40K</span>
+                                    <span>20K</span>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="table w-full">
+                        <h2 class="m-0 fs-16 mb-15">Recent Orders</h2>
+                        <div class="recent-orders d-flex">
+                            <div class="left flex-1 ml-20">
+                                <!-- First Product  -->
+                                <div class="products-info d-flex p-relative mb-15 red">
+                                    <div class="photo">
+                                        <img src="images/product-1.svg" alt="Product Photo">
+                                    </div>
+                                    <div class="info ml-15 p-relative w-full">
+                                        <span class="p-absolute">iphone 13</span>
+                                        <h3 class="m-0 p-absolute">N720,000.00 x 1</h3>
+                                    </div>
+                                    <div class="right m-auto">
+                                        <span class="btn-shape bg-red c-red">Pending</span>
+                                    </div>
+                                </div>
+
+                                <!-- Second Product -->
+                                <div class="products-info d-flex p-relative mb-15 red">
+                                    <div class="photo">
+                                        <img src="images/product-2.svg" alt="Product Photo">
+                                    </div>
+                                    <div class="info ml-15 p-relative w-full">
+                                        <span class="p-absolute">Iphone 12 Pro</span>
+                                        <h3 class="m-0 p-absolute">N50.000 x 2</h3>
+                                    </div>
+                                    <div class="right m-auto">
+                                        <span class="btn-shape bg-red c-red">Pending</span>
+                                    </div>
+                                </div>
+
+                                <!-- Third Product -->
+                                <div class="products-info d-flex p-relative mb-15 green">
+                                    <div class="photo">
+                                        <img src="images/product-3.svg" alt="Product Photo">
+                                    </div>
+                                    <div class="info ml-15 p-relative w-full">
+                                        <span class="p-absolute">Lopo T-Shirt</span>
+                                        <h3 class="m-0 p-absolute">N500,000.00 x 5</h3>
+                                    </div>
+                                    <div class="right m-auto">
+                                        <span class="btn-shape bg-green c-green">Completed</span>
+                                    </div>
+                                </div>
+
+                                <!-- Fourth Product -->
+                                <div class="products-info d-flex p-relative mb-15 green">
+                                    <div class="photo">
+                                        <img src="images/product-2.svg" alt="Product Photo">
+                                    </div>
+                                    <div class="info ml-15 p-relative w-full">
+                                        <span class="p-absolute">Iphone 12</span>
+                                        <h3 class="m-0 p-absolute">N10.00 x 3</h3>
+                                    </div>
+                                    <div class="right m-auto">
+                                        <span class="btn-shape bg-green c-green">Completed</span>
+                                    </div>
+                                </div>
+
+                                <!-- Eixth Product -->
+                                <div class="products-info d-flex p-relative mb-15 red">
+                                    <div class="photo">
+                                        <img src="images/product-1.svg" alt="Product Photo">
+                                    </div>
+                                    <div class="info ml-15 p-relative w-full">
+                                        <span class="p-absolute">iphone 11</span>
+                                        <h3 class="m-0 p-absolute">N350,050.20 x 4</h3>
+                                    </div>
+                                    <div class="right m-auto">
+                                        <span class="btn-shape bg-red c-red">Pending</span>
+                                    </div>
+                                </div>
+
+                                <!-- Seventh Product -->
+                                <div class="products-info d-flex p-relative mb-15 red">
+                                    <div class="photo">
+                                        <img src="images/product-3.svg" alt="Product Photo">
+                                    </div>
+                                    <div class="info ml-15 p-relative w-full">
+                                        <span class="p-absolute">T-Shirt</span>
+                                        <h3 class="m-0 p-absolute">N6,05.50 x 3</h3>
+                                    </div>
+                                    <div class="right m-auto">
+                                        <span class="btn-shape bg-red c-red">Pending</span>
+                                    </div>
+                                </div>
+
+                                <!-- Eighth Product -->
+                                <div class="products-info d-flex p-relative mb-15 green">
+                                    <div class="photo">
+                                        <img src="images/product-1.svg" alt="Product Photo">
+                                    </div>
+                                    <div class="info ml-15 p-relative w-full">
+                                        <span class="p-absolute">Iphone 15</span>
+                                        <h3 class="m-0 p-absolute">N850,050.23 x 5</h3>
+                                    </div>
+                                    <div class="right m-auto">
+                                        <span class="btn-shape bg-green c-green">Completed</span>
+                                    </div>
+                                </div>
+
+                                <!-- Nineth Product -->
+                                <div class="products-info d-flex p-relative mb-15 red">
+                                    <div class="photo">
+                                        <img src="images/product-3.svg" alt="Product Photo">
+                                    </div>
+                                    <div class="info ml-15 p-relative w-full">
+                                        <span class="p-absolute">Lopo T-Shirt</span>
+                                        <h3 class="m-0 p-absolute">N80,50.20 x 4</h3>
+                                    </div>
+                                    <div class="right m-auto">
+                                        <span class="btn-shape bg-red c-red">Pending</span>
+                                    </div>
+                                </div>
+
+                                <!-- Tenth Product -->
+                                <div class="products-info d-flex p-relative mb-15 green">
+                                    <div class="photo">
+                                        <img src="images/product-1.svg" alt="Product Photo">
+                                    </div>
+                                    <div class="info ml-15 p-relative w-full">
+                                        <span class="p-absolute">Iphone 13</span>
+                                        <h3 class="m-0 p-absolute">N6,020.00 x 6</h3>
+                                    </div>
+                                    <div class="right m-auto">
+                                        <span class="btn-shape bg-green c-green">Completed</span>
+                                    </div>
+                                </div>
+
+                                <!-- Eleventh Product -->
+                                <div class="products-info d-flex p-relative mb-15 green">
+                                    <div class="photo">
+                                        <img src="images/product-2.svg" alt="Product Photo">
+                                    </div>
+                                    <div class="info ml-15 p-relative w-full">
+                                        <span class="p-absolute">iphone 14</span>
+                                        <h3 class="m-0 p-absolute">N1030,050.00 x 5</h3>
+                                    </div>
+                                    <div class="right m-auto">
+                                        <span class="btn-shape bg-green c-green">Completed</span>
+                                    </div>
+                                </div>
+
+                                <!-- Tweleveth Product -->
+                                <div class="products-info d-flex p-relative mb-15 green">
+                                    <div class="photo">
+                                        <img src="images/product-3.svg" alt="Product Photo">
+                                    </div>
+                                    <div class="info ml-15 p-relative w-full">
+                                        <span class="p-absolute">T-Shirt</span>
+                                        <h3 class="m-0 p-absolute">N720,.00 x 1</h3>
+                                    </div>
+                                    <div class="right m-auto">
+                                        <span class="btn-shape bg-green c-green">Completed</span>
+                                    </div>
+                                </div>
+
+                                <!-- Thirteen Product -->
+                                <div class="products-info d-flex p-relative mb-15 red">
+                                    <div class="photo">
+                                        <img src="images/product-2.svg" alt="Product Photo">
+                                    </div>
+                                    <div class="info ml-15 p-relative w-full">
+                                        <span class="p-absolute">Iphone 17</span>
+                                        <h3 class="m-0 p-absolute">N10,5000.00 x 10</h3>
+                                    </div>
+                                    <div class="right m-auto">
+                                        <span class="btn-shape bg-red c-red">Pending</span>
+                                    </div>
+                                </div>
+
+                                <!-- Fourteen Product -->
+                                <div class="products-info d-flex p-relative mb-15 green">
+                                    <div class="photo">
+                                        <img src="images/product-1.svg" alt="Product Photo">
+                                    </div>
+                                    <div class="info ml-15 p-relative w-full">
+                                        <span class="p-absolute">iphone 16</span>
+                                        <h3 class="m-0 p-absolute">N200,600.00 x 8</h3>
+                                    </div>
+                                    <div class="right m-auto">
+                                        <span class="btn-shape bg-green c-green">Completed</span>
+                                    </div>
+                                </div>
+
+                                <!-- Sixteen Product -->
+                                <div class="products-info d-flex p-relative mb-15 red">
+                                    <div class="photo">
+                                        <img src="images/product-1.svg" alt="Product Photo">
+                                    </div>
+                                    <div class="info ml-15 p-relative w-full">
+                                        <span class="p-absolute">iphone 17</span>
+                                        <h3 class="m-0 p-absolute">N4020,000.00 x 7</h3>
+                                    </div>
+                                    <div class="right m-auto">
+                                        <span class="btn-shape bg-red c-red">Pending</span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- End Dashboard-summary -->
+                </div>
+            <!-- End Content -->
+            </div>
+        </div>
+        <!-- End Page -->
+    </body>
+</html>
